@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -euo pipefail
+ 
+modprobe vfio-pci
+ 
+for grp 
+do
+	for dev in /sys/kernel/iommu_groups/$grp/devices/*
+	do
+		vendor=$(<$dev/vendor)
+		device=$(<$dev/device)
+		if [ -e $dev/driver ]; then
+			echo $(basename $dev) > $dev/driver/unbind
+		fi
+		echo $vendor $device > /sys/bus/pci/drivers/vfio-pci/new_id
+	done
+done
+
