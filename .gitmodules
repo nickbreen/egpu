@@ -1,0 +1,3 @@
+[submodule "LookingGlass"]
+	path = LookingGlass
+	url = git@github.com:gnif/LookingGlass.git

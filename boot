@@ -17,7 +17,8 @@ qemu-system-x86_64 \
 -m ${mem} \
 -cpu host,kvm=off \
 -vga none \
--device vfio-pci,host=${dev},multifunction=on \
+-device vfio-pci,host=${dev} \
 -drive if=pflash,format=raw,readonly,file=${code} \
--drive if=pflash,format=raw,file=${tmp}
-
+-drive if=pflash,format=raw,file=${tmp} \
+-device ivshmem-plain,memdev=ivshmem \
+-object memory-backend-file,id=ivshmem,share=on,mem-path=/dev/shm/looking-glass,size=128M

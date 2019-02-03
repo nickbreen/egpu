@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -euo pipefail
+
+mkdir -p dl.d/
+
+wget --timestamping --continue --directory-prefix dl.d/ --input-file - <<EOF
+https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/upstream-virtio/virtio-win10-prewhql-0.1-161.zip
+https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.160-1/virtio-win.iso
+https://github.com/gnif/LookingGlass/releases/download/a12/looking-glass-host.exe
+EOF

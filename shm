@@ -1,5 +1,5 @@
 #!/bin/sh
 
 touch /dev/shm/looking-glass
-chown ${1:?specify a user name or ID}:kvm /dev/shm/looking-glass
-chmod 660 /dev/shm/looking-glass
+chgrp kvm /dev/shm/looking-glass
+chmod g+w /dev/shm/looking-glass
