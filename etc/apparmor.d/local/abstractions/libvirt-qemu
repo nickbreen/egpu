@@ -1,0 +1,3 @@
+/dev/shm/looking-glass rw,
+/var/lib/libvirt/images/* r,
+

@@ -8,4 +8,5 @@ wget --timestamping --continue --directory-prefix dl.d/ --input-file - <<EOF
 https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/upstream-virtio/virtio-win10-prewhql-0.1-161.zip
 https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.160-1/virtio-win.iso
 https://github.com/gnif/LookingGlass/releases/download/a12/looking-glass-host.exe
+https://www.techpowerup.com/vgabios/131115/Sapphire.HD7950.3072.120926_2.rom
 EOF

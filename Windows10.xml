@@ -140,17 +140,10 @@
     <hostdev mode='subsystem' type='pci' managed='yes'>
       <driver name='vfio'/>
       <source>
-        <address domain='0x0000' bus='0x03' slot='0x00' function='0x0'/>
-      </source>
-      <alias name='hostdev1'/>
-      <address type='pci' domain='0x0000' bus='0x00' slot='0x08' function='0x0'/>
-    </hostdev>
-    <hostdev mode='subsystem' type='pci' managed='yes'>
-      <driver name='vfio'/>
-      <source>
         <address domain='0x0000' bus='0x09' slot='0x00' function='0x0'/>
       </source>
       <alias name='hostdev2'/>
+      <rom bar='on' file='/var/lib/libvirt/images/Sapphire.HD7950.3072.120926_2.rom'/>
       <address type='pci' domain='0x0000' bus='0x00' slot='0x09' function='0x0'/>
     </hostdev>
     <hostdev mode='subsystem' type='pci' managed='yes'>

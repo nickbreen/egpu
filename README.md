@@ -32,3 +32,4 @@ Scripts and notes for eGPU virtualisation under Linux
 [Hyper-V]: https://blog.wikichoon.com/2014/07/enabling-hyper-v-enlightenments-with-kvm.html
 
 
+https://www.techpowerup.com/vgabios/131115/sapphire-hd7950-3072-120926-2
